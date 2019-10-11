@@ -5,7 +5,11 @@
   ],
   "recommendations": [
     { "id": 1, "name": "Vin", "ratings": "3" },
-    { "id": 1, "name": "Oli", "ratings": "5" }
+    { "id": 2, "name": "Oli", "ratings": "5" }
   ],
-  "profile": { "name": "typicode" }
+  "users": [
+    { "id": 1, "name": "Vin", "role": "Superadmin" },
+    { "id": 2, "name": "Oli", "role": "Admin" }
+  ]
+ 
 }

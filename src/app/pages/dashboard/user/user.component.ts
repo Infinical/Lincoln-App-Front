@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from 'src/app/services/users/user.service';
 
 @Component({
   selector: 'app-user',
@@ -6,19 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  headers: { name: string; }[];
+ 
+  users: any;
 
-  constructor() { }
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
-    this.headers = [
-      { name: "Name" },
-      { name: "Title" },
-      { name: "Timestamp" },
-      { name: "Delete" },
-      { name: "View" },
-      { name: "Download" }
-    ];
+   this.userService.getUsers().subscribe((response: any) => {
+     console.log(response)
+     this.users = response
+     
+   })
+  }
+
+
+  deleteUsers(value){
+    console.log(value)
   }
 
 }
