@@ -1,92 +1,42 @@
-<!-- <div class="columns">
-    <div class="column is-one-fifth sidenav level">
+<div class="main-container">
+  <header class="header header-6">
+    ...
+  </header>
+  <div class="content-container">
+    <nav class="sidenav">
+      <section class="sidenav-content">
+        <a
+          [routerLink]="['/dashboard/projects']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link "
+        >
+          Manage Projects
+        </a>
+        <a
+          [routerLink]="['/dashboard/recommendations']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+        >
+          Manage Recommendations
+        </a>
+        <a
+          [routerLink]="['/dashboard/users']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+        >
+          Manage Users
+        </a>
 
-      <div class="level-item">
-        <figure class="image is-64x64">
-          <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
-        </figure>
-      </div>
-
-      <div class="level-item menus">
-        <h1>Menus</h1>
-      </div>
-
-      <div class="level-left">
-        <h2>Ambassadors</h2>
-      </div>
-
-      <div class="level-left">
-        <h2>Supervisors</h2>
-      </div>
-
-
-      <div class="level-left">
-        <h2>Admins</h2>
-      </div>
-
-    
+        <a (click)="logout()" class="nav-link">
+          Logout
+        </a>
+      </section>
+    </nav>
+    <div class="content-area">
+      <router-outlet></router-outlet>
     </div>
-  </div>
- -->
-
-<div class="dash columns">
-  <aside class="menu sidenav column is-one-fifth ">
-    <div class="level-item">
-      <figure class="image is-64x64">
-        <img
-          class="is-rounded"
-          src="https://bulma.io/images/placeholders/128x128.png"
-        />
-      </figure>
-    </div>
-    <div class="menus">
-      <p class="menu-label">
-        General
-      </p>
-      <ul class="menu-list">
-        <li><a>Dashboard</a></li>
-        <li><a>Customers</a></li>
-      </ul>
-      <p class="menu-label">
-        Administration
-      </p>
-      <ul class="menu-list">
-        <li>
-          <a
-            [routerLink]="['/dashboard/projects']"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }"
-            >Manage Projects</a
-          >
-        </li>
-        <li>
-          <a
-            [routerLink]="['/dashboard/recommendations']"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }"
-            >Manage Recommmendations</a
-          >
-        </li>
-        <li>
-          <a
-            [routerLink]="['/dashboard/users']"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }"
-          >
-            Manage Users</a
-          >
-        </li>
-      </ul>
-
-      <p class="menu-label">
-        Misc
-      </p>
-      <ul class="menu-list">
-        <li><a (click)="logout()">Log Out</a></li>
-      </ul>
-    </div>
-  </aside>
-  <div class="column is-four-fifth content">
-    <router-outlet></router-outlet>
   </div>
 </div>
