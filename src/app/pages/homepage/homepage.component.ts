@@ -15,7 +15,7 @@ export class HomepageComponent implements OnInit {
 
 
   login(){
-    this.router.navigate(['admin'])
+    return this.router.navigate(['dashboard'])
   }
 
 }

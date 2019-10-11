@@ -11,7 +11,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
   declarations: [
     AppComponent,
     HomepageComponent,
-    DashboardComponent
+   
   ],
   imports: [
     BrowserModule,
