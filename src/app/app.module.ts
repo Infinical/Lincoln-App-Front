@@ -7,6 +7,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ClrIconModule } from '@clr/angular';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     ClarityModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ClrIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,9 +9,10 @@
           [routerLink]="['/dashboard/projects']"
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
-          class="nav-link "
+          class="nav-link"
         >
-          Manage Projects
+        <clr-icon shape="folder"></clr-icon>  Manage Projects
+         
         </a>
         <a
           [routerLink]="['/dashboard/recommendations']"
@@ -19,6 +20,7 @@
           [routerLinkActiveOptions]="{ exact: true }"
           class="nav-link"
         >
+        <clr-icon shape="success-standard"></clr-icon>
           Manage Recommendations
         </a>
         <a
@@ -27,10 +29,13 @@
           [routerLinkActiveOptions]="{ exact: true }"
           class="nav-link"
         >
+
+        <clr-icon shape="users"></clr-icon>
           Manage Users
         </a>
 
         <a (click)="logout()" class="nav-link">
+            <clr-icon shape="logout"></clr-icon>
           Logout
         </a>
       </section>

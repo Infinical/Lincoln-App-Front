@@ -6,10 +6,12 @@ import { RecommendationsComponent } from './recommendations/recommendations.comp
 import { ProjectsComponent } from './projects/projects.component';
 import { UserComponent } from './user/user.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { ClrIconModule } from '@clr/angular';
+
 
 
 @NgModule({
-    imports: [DashboardRoutingModule,CommonModule],
+    imports: [DashboardRoutingModule,CommonModule,ClrIconModule],
     declarations: [DashboardComponent, RecommendationsComponent, ProjectsComponent, UserComponent]
 })
 
