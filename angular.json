@@ -19,9 +19,20 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": false,
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.css", "../lincoln-app/node_modules/bulma/css/bulma.css"],
-            "scripts": []
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "node_modules/@clr/icons/clr-icons.min.css",
+              "node_modules/@clr/ui/clr-ui.min.css",
+              "src/styles.css",
+              "../lincoln-app/node_modules/bulma/css/bulma.css"
+            ],
+            "scripts": [
+              "node_modules/@webcomponents/custom-elements/custom-elements.min.js",
+              "node_modules/@clr/icons/clr-icons.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -79,8 +90,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.css"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
             "scripts": []
           }
         },
@@ -92,7 +108,9 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "e2e": {
@@ -129,8 +147,15 @@
               "projects/admin-app/src/favicon.ico",
               "projects/admin-app/src/assets"
             ],
-            "styles": ["projects/admin-app/src/styles.css"],
-            "scripts": []
+            "styles": [
+              "node_modules/@clr/icons/clr-icons.min.css",
+              "node_modules/@clr/ui/clr-ui.min.css",
+              "projects/admin-app/src/styles.css"
+            ],
+            "scripts": [
+              "node_modules/@webcomponents/custom-elements/custom-elements.min.js",
+              "node_modules/@clr/icons/clr-icons.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -192,7 +217,9 @@
               "projects/admin-app/src/favicon.ico",
               "projects/admin-app/src/assets"
             ],
-            "styles": ["projects/admin-app/src/styles.css"],
+            "styles": [
+              "projects/admin-app/src/styles.css"
+            ],
             "scripts": []
           }
         },
@@ -204,7 +231,9 @@
               "projects/admin-app/tsconfig.spec.json",
               "projects/admin-app/e2e/tsconfig.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "e2e": {
@@ -241,8 +270,15 @@
               "projects/supervisor-app/src/favicon.ico",
               "projects/supervisor-app/src/assets"
             ],
-            "styles": ["projects/supervisor-app/src/styles.css"],
-            "scripts": []
+            "styles": [
+              "node_modules/@clr/icons/clr-icons.min.css",
+              "node_modules/@clr/ui/clr-ui.min.css",
+              "projects/supervisor-app/src/styles.css"
+            ],
+            "scripts": [
+              "node_modules/@webcomponents/custom-elements/custom-elements.min.js",
+              "node_modules/@clr/icons/clr-icons.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -304,7 +340,9 @@
               "projects/supervisor-app/src/favicon.ico",
               "projects/supervisor-app/src/assets"
             ],
-            "styles": ["projects/supervisor-app/src/styles.css"],
+            "styles": [
+              "projects/supervisor-app/src/styles.css"
+            ],
             "scripts": []
           }
         },
@@ -316,7 +354,9 @@
               "projects/supervisor-app/tsconfig.spec.json",
               "projects/supervisor-app/e2e/tsconfig.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "e2e": {

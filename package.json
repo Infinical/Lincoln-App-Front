@@ -19,14 +19,18 @@
     "@angular/platform-browser": "~8.2.7",
     "@angular/platform-browser-dynamic": "~8.2.7",
     "@angular/router": "~8.2.7",
+    "@clr/angular": "^2.2.2",
     "bulma": "^0.7.5",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.9.1",
+    "@clr/ui": "2.2.2",
+    "@clr/icons": "2.2.2",
+    "@webcomponents/custom-elements": "^1.0.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.803.5",
-    "@angular/cli": "~8.3.5",
+    "@angular-devkit/build-angular": "~0.803.9",
+    "@angular/cli": "~8.3.9",
     "@angular/compiler-cli": "~8.2.7",
     "@angular/language-service": "~8.2.7",
     "@types/node": "~8.9.4",
