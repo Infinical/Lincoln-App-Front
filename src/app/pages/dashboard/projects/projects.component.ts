@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { ProjectsService } from 'src/app/services/projects/projects.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: "app-projects",
@@ -7,7 +9,8 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ProjectsComponent implements OnInit {
   headers = [];
-  constructor() {}
+  projects: []
+  constructor(private projectService: ProjectsService,private router: Router) {}
 
   ngOnInit() {
     this.headers = [
@@ -18,5 +21,20 @@ export class ProjectsComponent implements OnInit {
       { name: "View" },
       { name: "Download" }
     ];
+
+    this.fetchProjects()
+  }
+
+  fetchProjects(){
+    this.projectService.getProjects().subscribe((response:any) => {
+      console.log(response)
+      this.projects = response
+    })
+  }
+
+  viewProjectDetail(value){
+    this.projectService.selectedProject = value
+    // console.log(value) 
+    this.router.navigate(['dashboard/project-details'])
   }
 }

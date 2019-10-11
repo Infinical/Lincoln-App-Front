@@ -7,12 +7,14 @@ import { ProjectsComponent } from './projects/projects.component';
 import { UserComponent } from './user/user.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { ClrIconModule } from '@clr/angular';
+import { ProjectDetailsComponent } from './projects/project-details/project-details.component';
+import { RecomDetailsComponent } from './recommendations/recom-details/recom-details.component';
 
 
 
 @NgModule({
     imports: [DashboardRoutingModule,CommonModule,ClrIconModule],
-    declarations: [DashboardComponent, RecommendationsComponent, ProjectsComponent, UserComponent]
+    declarations: [DashboardComponent, RecommendationsComponent, ProjectsComponent, UserComponent, ProjectDetailsComponent, RecomDetailsComponent]
 })
 
 export class DashboardModule {}
