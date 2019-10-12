@@ -1,20 +1,17 @@
-<table class="table-container">
-    <thead>
-      <tr>
-          <th>Name</th>
-          <th>Title</th>
-          <th>Timestamp</th>
-          <th>View</th>
-          <th>Download</th>
-      </tr>
-    </thead>
-    <tbody *ngFor="let header of headers">
-        <td>{{header.name}}</td>
-        <td>{{header.name}}</td>
-        <td>{{header.name}}</td>
-        <td>{{header.name}}</td>
-        <td>{{header.name}}</td>
-       
-    </tbody>
-  </table>
-  
+<table class="table table-noborder">
+  <thead>
+    <tr>
+      <th class="left">Name</th>
+      <th>Role</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td class="left">{{ user.name }}</td>
+      <td>{{ user.role }}</td>
+
+      <td><input type="checkbox" clrCheckbox  (change)="deleteUsers(user)"/></td>
+    </tr>
+  </tbody>
+</table>

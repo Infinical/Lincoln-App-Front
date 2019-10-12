@@ -1,20 +1,24 @@
-<table class="table-container">
-    <thead>
-      <tr>
-          <th>Name</th>
-          <th>Title</th>
-          <th>Timestamp</th>
-          <th>View</th>
-          <th>Download</th>
-      </tr>
-    </thead>
-    <tbody *ngFor="let header of headers">
-        <td>{{header.name}}</td>
-        <td>{{header.name}}</td>
-        <td>{{header.name}}</td>
-        <td>{{header.name}}</td>
-        <td>{{header.name}}</td>
-       
-    </tbody>
-  </table>
-  
+<table class="table table-noborder">
+  <thead>
+    <tr>
+      <th class="left">Name</th>
+      <th>Ratings</th>
+
+      <th>Delete</th>
+      <th>View</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let recom of recommendations">
+      <td class="left">{{ recom.name }}</td>
+      <td>{{ recom.ratings }}</td>
+
+      <td><input type="checkbox" clrCheckbox /></td>
+      <td (click)="viewDetails(recom)" class="view-btn">
+        <clr-icon shape="eye"></clr-icon>
+        View
+      </td>
+     
+    </tr>
+  </tbody>
+</table>

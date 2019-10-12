@@ -1,19 +1,25 @@
-<table class="table-container">
+<table class="table table-noborder">
   <thead>
     <tr>
-        <th>Name</th>
-        <th>Title</th>
-        <th>Timestamp</th>
-        <th>View</th>
-        <th>Download</th>
+      <th class="left">Name</th>
+      <th>Title</th>
+      <th>TimeStamp</th>
+      <th>Delete</th>
+      <th>View</th>
+      <th class="left">Download</th>
     </tr>
   </thead>
-  <tbody *ngFor="let header of headers">
-      <td>{{header.name}}</td>
-      <td>{{header.name}}</td>
-      <td>{{header.name}}</td>
-      <td>{{header.name}}</td>
-      <td>{{header.name}}</td>
-     
+  <tbody>
+    <tr *ngFor="let project of projects">
+      <td class="left">{{ project.name }}</td>
+      <td>{{ project.title }}</td>
+      <td>{{ project.timestamp }}</td>
+      <td><input type="checkbox" clrCheckbox /></td>
+      <td (click)="viewProjectDetail(project)" class="view-btn">
+        <clr-icon shape="eye"></clr-icon>
+        View
+      </td>
+      <td class="view-btn"><clr-icon shape="download"></clr-icon> Download</td>
+    </tr>
   </tbody>
 </table>

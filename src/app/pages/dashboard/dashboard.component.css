@@ -1,5 +1,5 @@
 .sidenav {
-    background-color: #001A2F;
+    background-color:white;
     height: 100vh;
 }
 
@@ -9,4 +9,8 @@
 
 .content {
     background: #E0E7EB;
+}
+
+.nav-link {
+    color: white;
 }
